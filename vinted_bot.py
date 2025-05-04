@@ -6,7 +6,7 @@ from datetime import datetime
 # Configuration
 CONFIG = {
     "WEBHOOK_URL": os.getenv('DISCORD_WEBHOOK'),
-    "VINTED_URL": "https://www.vinted.fr/vetements?search_text=nike&order=price_low_to_high",
+    "VINTED_URL": "https://www.vinted.fr/catalog?search_text=ralph%20lauren&time=1746388132",
     "MAX_ITEMS": 5,
     "TIMEOUT": 10
 }

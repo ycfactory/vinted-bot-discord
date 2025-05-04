@@ -1,0 +1,26 @@
+name: Vinted Bot
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Toutes les heures
+  workflow_dispatch:     # Permet un déclenchement manuel
+
+jobs:
+  scrape-and-notify:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+          
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+          
+      - name: Run Vinted Bot
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: python vinted_bot.py

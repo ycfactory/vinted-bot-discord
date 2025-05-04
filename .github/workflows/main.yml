@@ -24,4 +24,3 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         run: python vinted_bot.py
-        

@@ -5,8 +5,8 @@ from datetime import datetime
 
 # Configuration
 CONFIG = {
-    "WEBHOOK_URL": os.getenv('DISCORD_WEBHOOK'),
-    "VINTED_URL": "https://www.vinted.fr/catalog?search_text=ralph+lauren&order=newest_first",
+    "WEBHOOK_URL": os.getenv('https://discord.com/api/webhooks/1368651642194624532/o30jr76nxEUXg-eZPzWpZbGWAppehLI9VQhBNoMvaoBJyaRXtXJ4dWbq5dkjBqoMkA8K'),
+    "VINTED_URL": "https://www.vinted.fr/api/v2/catalog/items?search_text=ralph%20lauren&order=newest_first",
     "MAX_ITEMS": 5,
     "TIMEOUT": 10
 }
